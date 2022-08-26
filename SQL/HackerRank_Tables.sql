@@ -1,0 +1,37 @@
+DROP DATABASE IF EXISTS HackerRank;
+CREATE DATABASE HackerRank;
+
+USE HackerRank;
+
+CREATE TABLE CITY(
+	ID				INT,
+	NAME			VARCHAR(17),
+    COUNTRYCODE		VARCHAR(3),
+    DISTRICT		VARCHAR(20),
+	POPULATION		INT,
+    CONSTRAINT pk_city_id PRIMARY KEY (ID)
+);
+
+CREATE TABLE STATION(
+	ID			INT,
+    CITY		VARCHAR(21),
+	STATE		VARCHAR(2),
+	LAT_N		INT,
+	LONG_W		INT,
+    CONSTRAINT pk_station_id PRIMARY KEY (ID)
+);
+
+CREATE TABLE STUDENTS(
+	ID		INT,
+    Name	VARCHAR(50),
+	Marks	INT,
+    CONSTRAINT pk_students_id PRIMARY KEY (ID)
+);
+
+CREATE TABLE Employee(
+	employee_id		INT,
+	name			VARCHAR(50),
+	months			INT,
+	salary			INT,
+    CONSTRAINT pk_employee_id PRIMARY KEY (employee_id)
+);
