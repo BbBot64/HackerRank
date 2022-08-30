@@ -5,7 +5,7 @@ USE HackerRank;
 
 CREATE TABLE CITY(
 	ID				INT,
-	NAME			VARCHAR(17),
+	NAME			VARCHAR(30),
     COUNTRYCODE		VARCHAR(3),
     DISTRICT		VARCHAR(20),
 	POPULATION		INT,
@@ -34,4 +34,10 @@ CREATE TABLE Employee(
 	months			INT,
 	salary			INT,
     CONSTRAINT pk_employee_id PRIMARY KEY (employee_id)
+);
+
+CREATE TABLE TRIANGLES(
+	A		INT,
+    B		INT,
+	C		INT
 );
