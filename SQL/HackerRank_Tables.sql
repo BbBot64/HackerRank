@@ -36,6 +36,13 @@ CREATE TABLE Employee(
     CONSTRAINT pk_employee_id PRIMARY KEY (employee_id)
 );
 
+CREATE TABLE Employees(
+	ID		INT,
+	Name			VARCHAR(50),
+	Salary			INT,
+    CONSTRAINT pk_employee_id PRIMARY KEY (ID)
+);
+
 CREATE TABLE TRIANGLES(
 	A		INT,
     B		INT,
