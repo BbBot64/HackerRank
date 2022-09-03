@@ -6,8 +6,10 @@ QUESTION:
 
 	Note: CITY.CountryCode and COUNTRY.Code are matching key columns.
     
-	1) SELECT CITY.CountryCode
-    2) FROM 
+	1) SELECT CITY.NAME
+    2) FROM CITY, COUNTRY
+    3) WHERE CITY.COUNTRYCODE = COUNTRY.CODE
+    4) AND CONTINENT is Africa
 */
 
 # Solution:
